@@ -1,4 +1,4 @@
-Preferable Adminstrator
+Preferably Adminstrator
 
 permissions needed:
 - manage_roles
