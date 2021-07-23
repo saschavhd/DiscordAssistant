@@ -1,0 +1,14 @@
+TODO
+- TESTING
+- more documentation
+- confirmation on leave command
+- add user sided error handling for commands
+- switch proposal response to reaction buttons
+- batch updating events
+- add check and repeat on creating events in the past
+- adding role management to events
+- setup local mongo server
+- help command (general and specific)
+- birthday message in correct channel
+- automated testing
+- logging

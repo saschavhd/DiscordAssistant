@@ -1,0 +1,11 @@
+Python 3.8+
+discord.py 1.6.0+
+dnspyton 2.1.0+
+pymongo 3.11.4+
+emoji 1.2.0+
+openai 0.10.4+
+
+Custom classes are integrated but also available on my GitHub:
+menu beta
+page beta
+(As mentioned in the project's README, there are better extensions available for this!)

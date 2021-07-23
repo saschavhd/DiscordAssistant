@@ -1,0 +1,16 @@
+Preferable Adminstrator
+
+permissions needed:
+- manage_roles
+- mute_members
+- create_roles
+- edit_roles
+- edit_channel_permissions
+- mute_members
+- kick_members
+- ban_members
+- send_messages
+- edit_messages
+- delete_messages
+- send_files
+- send_attachments
