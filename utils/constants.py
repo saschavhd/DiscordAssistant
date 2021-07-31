@@ -2,7 +2,7 @@ from datetime import datetime
 import discord
 import os
 
-DISCORD_API_KEY = os.getenv('apikey_discordbot')
+DISCORD_API_KEY = os.getenv('apikey_discordassistant')
 MONGODB_API_KEY = os.getenv('apikey_mongodb_discordassistant')
 OPENAI_API_KEY = os.getenv('apikey_openai')
 

@@ -361,29 +361,40 @@ class Menu():
             while self._running:
 
                 tasks = [
-                    asyncio.create_task(self.bot.wait_for('raw_reaction_add', check=self._check_button)),
-                    asyncio.create_task(self.bot.wait_for('raw_reaction_remove', check=self._check_button))
+                    asyncio.create_task(self.bot.wait_for('raw_reaction_add',
+                                                          check=self._check_button)),
+                    asyncio.create_task(self.bot.wait_for('raw_reaction_remove',
+                                                          check=self._check_button))
                 ]
 
                 if self.input:
                     tasks.append(
-                        asyncio.create_task(self.bot.wait_for('message', check=self.input))
+                        asyncio.create_task(self.bot.wait_for('message',
+                                                              check=self.input))
                     )
 
                 if self.reaction_input:
                     tasks.append(
-                        asyncio.create_task(self.bot.wait_for('raw_reaction_add', check=self.reaction_input))
+                        asyncio.create_task(
+                            self.bot.wait_for('raw_reaction_add',
+                                              check=self.reaction_input))
                     )
                     tasks.append(
-                        asyncio.create_task(self.bot.wait_for('raw_reaction_remove', check=self.reaction_input))
+                        asyncio.create_task(
+                            self.bot.wait_for('raw_reaction_remove',
+                                              check=self.reaction_input))
                     )
 
                 if self.selectors:
                     tasks.append(
-                        asyncio.create_task(self.bot.wait_for('raw_reaction_add', check=self._check_selector))
+                        asyncio.create_task(
+                            self.bot.wait_for('raw_reaction_add',
+                                              check=self._check_selector))
                     )
                     tasks.append(
-                        asyncio.create_task(self.bot.wait_for('raw_reaction_remove', check=self._check_selector))
+                        asyncio.create_task(
+                            self.bot.wait_for('raw_reaction_remove',
+                                              check=self._check_selector))
                     )
 
                 done, pending = await asyncio.wait(

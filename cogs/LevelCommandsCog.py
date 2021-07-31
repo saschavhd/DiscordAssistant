@@ -20,7 +20,8 @@ class LevelCommandsCog(commands.Cog):
         user = db['Users'].find_one({'_id': ctx.author.id})
         try:
             user_exp = user['servers'][str(ctx.guild.id)]['experience']
-        except KeyError:
+        except (KeyError, TypeError):
+            await ctx.send("No record found!")
             return
 
         users = list(db['Users'].find({f'servers.{ctx.guild.id}': {'$exists': True}}))
