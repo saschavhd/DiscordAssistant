@@ -1,5 +1,5 @@
 # DiscordAssistant
-[unfinshed]
+[unfinished]
 An all-in-one Discord Bot with GPT-3 integrated features!
 
 This bot is not hosted for public use, only for a private server.
