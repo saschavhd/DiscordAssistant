@@ -6,7 +6,6 @@ This bot is not hosted for public use, only for a private server.
 To use the full extent of this bot you must create your own MongoDB database and have OpenAI GPT-3 Beta Access!
 
 GPT-3 features:
-- Addiction helper
 - Joke maker
 - Story creater based on topics
 
